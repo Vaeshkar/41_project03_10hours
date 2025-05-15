@@ -5,3 +5,5 @@ const args = process.argv.slice(2);
 let userString = args.join(' ').split(' ')
 
 console.log(userString);
+
+// owno
