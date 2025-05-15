@@ -31,7 +31,7 @@ const random = Math.floor(Math.random() * choice.length)
 // Initialize a computer Choice
 const compChoice = choice[random]
 // Set the user Choice - unstring it with .join()
-const userChoice = args.join()
+const userChoice = args.join().toLowerCase()
 
 // test choices works
 /* console.log(compChoice);
@@ -44,7 +44,7 @@ scissors - paper:  scissors wins
 paper - rock:      paper wins
 */
 
-// check function | Naive Version – large it statement
+// check function | Naive Version – large if statement
 function gameWin(player, computer) {
     if ((player === choice[0] && computer === choice[2]) || (player === choice[2] && computer === choice[1]) || (player === choice[1] && computer === choice[0]))
     return `You chose ${userChoice}. Computer chose ${compChoice}. You win!`
