@@ -6,4 +6,5 @@ let userString = args.join(' ').split(' ')
 
 console.log(userString);
 
-// owno
+// Checking if each string has two consonants or a consonant and a vowel or just a vowel
+
