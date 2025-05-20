@@ -22,23 +22,25 @@ userString.forEach((word) => {
     if (!vowels.includes(word[0]) && vowels.includes(word[1])) {
         // If a word starts with a consonant and a vowel, 
         // put the first letter of the word at the end of the word and add “ay.”
-        const cvString = word.slice(1) + word[0] + 'ay ';
+        const cvString = word.slice(1) + word[0] + 'ay';
         translateWords.push(cvString);
     }
     else if (vowels.includes(word[0]) && vowels.includes(word[1])) {
         // If a word starts with two consonants 
         // move the two consonants to the end of the word and add “ay.”
-        const vvString = word.slice(1) + word[0] + word[1] + 'ay ';
+        const vvString = word.slice(1) + word[0] + word[1] + 'ay';
         translateWords.push(vvString);
     }
     else if (vowels.includes(word[0])) {
         // If a word starts with a vowel add the word “way” at the end of the word.
-        const vString = word + 'way ';
+        const vString = word + 'way';
         translateWords.push(vString);
     };
 
  })
 
+// Convert the let to a const and string it with spaces
 const finalSentence = translateWords.join(' ')
 
+// clg it. 
 console.log(finalSentence);
