@@ -79,3 +79,26 @@ This project is created as part of WBS Coding School curriculum.
 
 💬 Questions?
 Open an issue on this repo if you have questions, or talk to your instructor during check-ins! Let me know if you’d like a version with Markdown preview styling or emojis trimmed!
+
+---
+
+## ✅ Project Completion Checklist
+
+All required exercises have been completed with guidance:
+
+- [x] Rock Paper Scissors (FR005)
+- [x] Pig Latin Translator (FR006)
+- [x] Caesar Cipher (FR007)
+
+> These exercises were completed with Online Searches and Articles, but every step was understood and implemented personally.
+> ⚠️ **Note:** All work was completed on a single branch. Future projects will follow best practices by creating separate branches for each feature and merging them via Pull Requests.
+
+---
+
+## 🧠 Reflections & Notes
+
+- Practiced advanced JavaScript string manipulation and logic  
+- Learned about character codes and modular arithmetic (Caesar Cipher)  
+- Explored different ways to loop and transform data (`forEach`, `map`)  
+- Understood how to identify and handle user input from `process.argv`  
+- Gained confidence in using regular expressions to detect letters  
