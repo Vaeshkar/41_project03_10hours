@@ -61,7 +61,7 @@ function gameWin(player, computer, outcome) {
         paper: "rock",
         scissors: "paper"
     };
-    // check 
+    // Object check 
     if (computer === winsGame[player]) {
         return resultText(player, computer, 'win');;
     };
