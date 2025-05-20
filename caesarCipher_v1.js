@@ -18,7 +18,11 @@
     - A positive shift means shift to the right
     - Output the encrypted phrase to the console.
 
+    String Constructor:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String
 
+    ASCII codes:
+    https://www.w3schools.com/charsets/ref_html_ascii.asp
  */
 
 
@@ -36,12 +40,13 @@ console.log(args[0]);
 console.log(args[1]);
 
 const returnString = userString
-    .split('') // to get
+    .split('') // to get letters from the userString
     .map((letter) => {
         // look true alphabet with RegEx.
     if (/[a-z]/.test(letter)) {
-        const baseLetter = 'a'.charCodeAt(0); // set a first letter of 0 for the modulo of 26: a = 0, z = 25
+        const baseLetter = 'a'.charCodeAt(0); // Grab the charChode at index position 0, get a base value: 97
         const shiftLetter = (letter.charCodeAt(0) - baseLetter + userShift + 26) % 26; // 
+        // return the String Constructor and convert the codes to chars. 
         return String.fromCharCode(baseLetter + shiftLetter);
     } else {
         // anything else return to returnString
